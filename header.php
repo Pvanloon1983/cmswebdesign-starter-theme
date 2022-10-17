@@ -16,31 +16,31 @@
   <?php wp_body_open(); ?>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4" id="navbar">
-        <div class="container">
-            <a class="navbar-brand" href="<?php bloginfo('url'); ?>">Logo</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarExample-expand-lg" aria-controls="offcanvasNavbarExample-expand-lg">
-                    <span class="navbar-toggler-icon" data-bs-target="#offcanvasNavbarExample-expand-lg"></span>
-                </button>
-            <div class="offcanvas offcanvas-start bg-light" data-bs-hideresize="true" tabindex="-1" id="offcanvasNavbarExample-expand-lg" aria-labelledby="offcanvasNavbarExample-expand-lg">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title text-dark" id="offcanvasLabel">Logo</h5>
-                    <button type="button" class="btn-close btn-close-dark text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-        
-        <div class="offcanvas-body" id="main-menu">
-            <?php
-            wp_nav_menu(array(
-                'theme_location' => 'main-menu',
-                'container' => false,
-                'menu_class' => '',
-                'fallback_cb' => '__return_false',
-                'items_wrap' => '<ul id="%1$s" class="navbar-nav ms-auto mb-2 mb-md-0 %2$s">%3$s</ul>',
-                'depth' => 2,
-                'walker' => new bootstrap_5_wp_nav_menu_walker()
-            ));
-            ?>
-            </div>
+    <div class="container">
+      <a class="navbar-brand" href="<?php bloginfo('url'); ?>">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarExample-expand-lg" aria-controls="offcanvasNavbarExample-expand-lg">
+        <span class="navbar-toggler-icon" data-bs-target="#offcanvasNavbarExample-expand-lg"></span>
+      </button>
+      <div class="offcanvas offcanvas-start bg-light" data-bs-hideresize="true" tabindex="-1" id="offcanvasNavbarExample-expand-lg" aria-labelledby="offcanvasNavbarExample-expand-lg">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-dark" id="offcanvasLabel">Logo</h5>
+          <button type="button" class="btn-close btn-close-dark text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
+
+        <div class="offcanvas-body" id="main-menu">
+          <?php
+          wp_nav_menu(array(
+            'theme_location' => 'main-menu',
+            'container' => false,
+            'menu_class' => '',
+            'fallback_cb' => '__return_false',
+            'items_wrap' => '<ul id="%1$s" class="navbar-nav ms-auto mb-2 mb-md-0 %2$s">%3$s</ul>',
+            'depth' => 2,
+            'walker' => new bootstrap_5_wp_nav_menu_walker()
+          ));
+          ?>
+        </div>
+      </div>
     </div>
-</nav>
-<div class="container">
+  </nav>
+  <div class="container">
