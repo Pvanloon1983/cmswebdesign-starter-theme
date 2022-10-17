@@ -1,3 +1,7 @@
+#wpadminbar {
+  z-index: 1;
+}
+
 // Dropdown toggle icon
 .dropdown-toggle::after {
   display: inline-block;
@@ -31,4 +35,41 @@
 .navbar-toggler-icon:focus {
     outline: none;
     box-shadow: none;
+}
+
+.offcanvas {
+  position: fixed;
+  bottom: 0;
+  z-index: var(--bs-offcanvas-zindex);
+  display: flex;
+  flex-direction: column;
+  max-width: 275px;
+  color: var(--bs-offcanvas-color);
+  visibility: hidden;
+  background-color: var(--bs-offcanvas-bg);
+  background-clip: padding-box;
+  outline: 0;
+  transition: transform .3s ease-in-out;
+
+  .offcanvas-header {
+    position: relative;
+    z-index: 99999;
+  }
+
+  .offcanvas-header .btn-close:focus,
+  .offcanvas-header .btn-close:active {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #1e2125;
+  text-decoration: none;
+  background-color: #f8f9fa;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+  color: #1e2125;
+  background-color: #f8f9fa;
 }

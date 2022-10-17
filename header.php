@@ -15,14 +15,19 @@
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
 
-  <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
-    <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="<?php bloginfo('url'); ?>">Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarExample-expand-lg" aria-controls="offcanvasNavbarExample-expand-lg">
+                    <span class="navbar-toggler-icon" data-bs-target="#offcanvasNavbarExample-expand-lg"></span>
+                </button>
+            <div class="offcanvas offcanvas-start bg-light" data-bs-hideresize="true" tabindex="-1" id="offcanvasNavbarExample-expand-lg" aria-labelledby="offcanvasNavbarExample-expand-lg">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-dark" id="offcanvasLabel">Logo</h5>
+                    <button type="button" class="btn-close btn-close-dark text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
         
-        <div class="collapse navbar-collapse" id="main-menu">
+        <div class="offcanvas-body" id="main-menu">
             <?php
             wp_nav_menu(array(
                 'theme_location' => 'main-menu',
@@ -34,6 +39,7 @@
                 'walker' => new bootstrap_5_wp_nav_menu_walker()
             ));
             ?>
+            </div>
         </div>
     </div>
 </nav>
