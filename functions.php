@@ -1,6 +1,9 @@
 <?php
 
 function cmswebdesign_scripts() {
+
+  // Style.css
+  wp_enqueue_style( 'head-style', get_stylesheet_uri() ); 
   
   // Own CSS
   wp_enqueue_style( 'styles-css', get_template_directory_uri() . './dist/css/main.css', array(), '1.0', 'all');
