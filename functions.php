@@ -2,12 +2,21 @@
 
 function cmswebdesign_scripts() {
 
-  // Style.css
-  wp_enqueue_style( 'head-style', get_stylesheet_uri() ); 
-  
+  // Style.css (if you want to use tailwind css)
+  // wp_enqueue_style( 'head-style', get_stylesheet_uri() ); 
+
+  // Bootstrap 5 CSS
+  wp_enqueue_style( 'bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css', array(), '5.2.2', 'all' );
+
+  // Font awesome CSS
+  wp_enqueue_style( 'fontawesome-css', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css', array(), '6.2.0', 'all' );
+
   // Own CSS
-  wp_enqueue_style( 'styles-css', get_template_directory_uri() . './dist/css/main.css', array(), '1.0', 'all');
- 
+  wp_enqueue_style( 'styles-css', get_template_directory_uri() . './dist/css/main.css', array(), '1.0', 'all');  
+  
+  // Bootstrap 5 JS
+  wp_enqueue_script( 'bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js', array (), '5.2.2', true);
+
   // Own JS
   wp_enqueue_script( 'scripts-js', get_template_directory_uri() . './dist/js/main.js', array ( 'jquery' ), '1.0', true);
  

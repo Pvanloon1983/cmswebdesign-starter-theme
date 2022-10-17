@@ -1,4 +1,5 @@
 {
+  "_comment": "To minify tailwind css, add --minify to watch-tailwind",
   "name": "cmswebdesign",
   "version": "1.0.0",
   "description": "",
@@ -6,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch-mix": "mix --production -- --watch --progress",  
-    "watch-tailwind": "npx tailwindcss -i ./tailwind.css -o ./style.css --minify --watch"
+    "watch-tailwind": "npx tailwindcss -i ./tailwind.css -o ./style.css --watch"
   },
   "keywords": [],
   "author": "",
