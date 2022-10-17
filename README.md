@@ -11,7 +11,7 @@ npm run watch-tailwind & npm run watch-mix
 
 Both scripts can be run at the same time. 
 
-Tailwind CSS will be minified from ./tailwind.css into ./style.css.
+Tailwind CSS will be minified from ./tailwind.css into ./style-tailwind.css.
 Sass and JavaScript files will be minified from the ./src/scss and ./src/js into ./dist/css and ./dist/js.
 
-Via functions.php you can choose whether you want to enable bootstrap 5 of tailwind css.
+Via functions.php you can choose whether you want to enable tailwind css or not.

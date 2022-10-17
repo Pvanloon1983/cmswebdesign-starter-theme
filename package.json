@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch-mix": "mix --production -- --watch --progress",  
-    "watch-tailwind": "npx tailwindcss -i ./tailwind.css -o ./style.css --watch"
+    "watch-tailwind": "npx tailwindcss -i ./tailwind.css -o ./style-tailwind.css --watch"
   },
   "keywords": [],
   "author": "",
