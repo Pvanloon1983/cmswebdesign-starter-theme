@@ -15,7 +15,7 @@
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4" id="navbar">
         <div class="container">
             <a class="navbar-brand" href="<?php bloginfo('url'); ?>">Logo</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarExample-expand-lg" aria-controls="offcanvasNavbarExample-expand-lg">
