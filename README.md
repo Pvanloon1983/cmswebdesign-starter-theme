@@ -1,6 +1,6 @@
 # Wordpress starter theme
 
-This is a simple WordPress starter template including:
+This is a simple WordPress starter theme including:
 * Tailwind CSS support
 * Laravel-mix support
 * Sass support
